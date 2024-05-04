@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title> Membuat Form </title>
+    <style>
+        body {
+            background-color: #48b4db; 
+            background-size: 100% 15%;
+            margin: 0;
+            padding: 0; 
+        }
+
+        .frame2 {
+            background-color: grey; 
+            height: 60vh; 
+            padding: 20px;
+        }
+
+        .frame3 {
+            background-color: #ff707a;
+            height: 20vh; 
+            padding: 20px;
+        }
+
+        .content_1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: red;
+            font-size: 25px;
+        }
+
+        .content_2{
+            text-align: justify;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="frame1">
+        <div class="content_1">
+            <h1>Pendaftaran Kursus</h1>
+        </div>
+    </div>
+    <div class="frame2">
+        <div class="content_2">
+            <h2>Data Diri</h2>
+            <form action="Pendaftaran kursus.php" method="post">
+                Nama <input type="text" name="Nama"><br>
+                Nim <input type="text" name="Nim"><br>
+                E-mail <input type="text" name="E-mail"><br>
+                Tanggal Lahir <input type="date" name="bday"><br>
+                Jenis Kelamin<br> 
+                <input type="radio" name="jenis_kelamin" value="L"> Laki-laki<br> 
+                <input type="radio" name="jenis_kelamin" value="P"> Perempuan <br>
+                Pilih Program Kursus<br> 
+                <input type="checkbox" name="kursus_1" value="C"> C#<br>
+                <input type="checkbox" name="kursus_2" value="Java"> Java<br>
+                <input type="checkbox" name="kursus_3" value="SQL"> SQL<br> 
+                <input type="checkbox" name="kursus_4" value="HTML dan PHP"> HTML dan PHP<br>
+                Pilih Hari/Jam Kursus<br>
+                <select name="Pilih Hari/jam_kursus">
+                    <option value="sr">Senin-Rabu/09.00-11.00</option><br> 
+                    <option value="kj">Kamis-Jumat/14.00-16.00</option><br> 
+                    <option value="sm">Sabtu-Minggu/18.00-20.00</option><br>
+                </select> <br>
+                <br>
+        </div>
+    </div>
+    <div class="frame3">
+        <div class="content_2">
+            Komentar Anda<br>
+                <textarea name="komentar" cols="40" rows="5"></textarea><br>
+                <input type="submit" value="Submit" name="Submit"> 
+                <input type="reset" value="Reset" name="Reset"> 
+                <input type="button" value="Cancel" name="Cancel"> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
